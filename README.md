@@ -35,3 +35,11 @@ To use MySql to save your targets, you have to comment the file stuff in the inc
 Configure your server in the config_mysql.php
 
 This will enable MySql and user seperate saving of the summenors.
+
+You have to set up a new MySql Table with:
+
+CREATE TABLE `$yourDatabase`.`sendTo` (
+`user` TEXT NOT NULL ,
+`summenor_name` TEXT NOT NULL ,
+`summenor_jid` TEXT NOT NULL
+) ENGINE = InnoDB;
