@@ -1,6 +1,6 @@
 # .htaccess-Datei für Web-Verzeichnis ./
 AuthType Basic
 AuthName "Service-Bereich"
-AuthUserFile /home/andreas/www/loltimer/.htusers
+AuthUserFile /path/to/the/auth/user/file
 
 Require valid-user
