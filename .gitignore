@@ -1,0 +1,11 @@
+
+
+
+.directory
+
+# old xmpphp dir
+xmpphp/
+
+# critical data
+users_b
+config.php_b

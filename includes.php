@@ -1,6 +1,4 @@
-<!DOCTYPE HTML>
-<html>
-<!--
+<?php
 /*This file is part of lolnbla.
 
 lolnbla is free software: you can redistribute it and/or modify
@@ -16,25 +14,26 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with lolnbla.  If not, see <http://www.gnu.org/licenses/>.
 */
--->
-<head>
-        <meta name="viewport" content="width=320, initial-scale=1" />
-        <meta http-equiv="content-type" content="text/html; charset=utf-8">
-</head>
-<body> 
-    <form action="lolSaveUser.php" method="post">
-        <textarea name="names" cols="50" rows="10">
-<?php
-            include("includes.php");
-            
-            $names = $sendTo->getNames();
-            
-            foreach($names as $name => $sum_id)
-            {
-                echo("$name;$sum_id\n");
-            }
-?></textarea><br />
-        <input type="submit" value="Speichern">
-    </form>
-</body>
-</html>
+
+/*!
+ *This File includes all necesarray Files, so its easy to exchange them.
+ */
+
+ 
+//  sendTo with Text files
+    include("sendTo.php");
+    include("user.php");
+
+    $user = new user();
+    $sendTo = new sendTo("./users");
+    
+    
+//  sendTo with mysql
+//     include("sendTo_Mysql.php");
+//     include("user.php");
+// 
+//     $user = new user();
+//     $sendTo = new sendTo($user->getUserName());
+
+ 
+?>

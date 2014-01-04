@@ -26,12 +26,8 @@ along with lolnbla.  If not, see <http://www.gnu.org/licenses/>.
     include("config.php");
 
     include("XMPPHP/XMPP.php");
-    include("sendTo.php");
-    include("user.php");
+    include("includes.php");
     
-     
-    $sendTo = new sendTo("./users");
-    $user = new user();
     $user_name = $user->getUserName();
     
     

@@ -14,7 +14,9 @@ The .htusers file manages the access to your site, via .htaccess (de.selfhtml.or
 
 Now add all summenors you want so send messages via this program. Use the interface provided via the index.php.
 You have to use the following format:
+
 name1;sum123456@pvp.net
+
 name2;sum234455@pvp.net
 
 etc.
@@ -26,3 +28,11 @@ At the moment it's only available in German. There migth be an English version o
 This program uses a modified version of the XMPPHP libary ( http://code.google.com/p/xmpphp/ ).
 
 Have fun.
+
+== ENABLE MYSQL
+
+To use MySql to save your targets, you have to comment the file stuff in the includes.php and to uncomment the mysql stuff.
+
+Configure your server in the config_mysql.php
+
+This will enable MySql and user seperate saving of the summenors.

@@ -23,10 +23,8 @@ along with lolnbla.  If not, see <http://www.gnu.org/licenses/>.
 </head>
 <body>
 <?php
-    include("sendTo.php");
+    include("includes.php");
             
-    $sendTo = new sendTo("./users");
-
     $rows = explode("\r\n",$_POST['names']);
     foreach($rows as $row)
     {
