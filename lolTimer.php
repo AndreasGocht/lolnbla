@@ -47,7 +47,7 @@ along with lolnbla.  If not, see <http://www.gnu.org/licenses/>.
         $names = $sendTo->getNames();
         foreach($names as $name =>$sum_id)
         {
-            $conn->message($sum_id, "User ".$user_name." ist in ".$_POST['zeit']." online, this is a test message");
+            $conn->message($sum_id, "User ".$user_name." in in ".$_POST['zeit']." online");
             echo "Nachricht an $name($sum_id) gesendet<br />\n";
         }
     
