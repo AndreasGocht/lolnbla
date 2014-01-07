@@ -38,8 +38,10 @@ along with lolnbla.  If not, see <http://www.gnu.org/licenses/>.
     EU:NE   chat.eun1.lol.riotgames.com
     */
     $conn = new XMPPHP_XMPP('chat.eu.lol.riotgames.com', 5223, $sumName, "AIR_$sumPassword", 'xiff', 'pvp.net', $printlog=false, $loglevel=XMPPHP_Log::LEVEL_INFO);
+    $conn->autoSubscribe(true);
     
     try {
+        
         $conn->connect();
 
         $conn->processUntil('session_start');
